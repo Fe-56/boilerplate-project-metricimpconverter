@@ -14,11 +14,11 @@ module.exports = function (app) {
     let returnMagnitude;
     let returnUnit;
     let invalidInput = false;
+
+    console.log(req.query.input);
     
     if (magnitude == null){
-      result = {
-        string: 'invalid number'
-      };
+      result = 'invalid number';
       invalidInput = true;
     }
     

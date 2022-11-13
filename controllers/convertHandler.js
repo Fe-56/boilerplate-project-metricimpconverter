@@ -1,6 +1,6 @@
 function ConvertHandler() {
   this.isCorrectInputFormat = function(input){ // ensures the input only contains numbers, alphabets, decimal places and the division operator
-    return /^\d+(\.\d+)?(\/)+\d+(\.\d+)?[a-zA-Z]+$|^\d+(\.\d+)?[a-zA-Z]+$/.test(input);
+    return /^\d+(\.\d+)?(\/{1})\d+(\.\d+)?[a-zA-Z]+$|^\d+(\.\d+)?[a-zA-Z]+$/.test(input);
   }
   
   this.getNum = function(input) {
